@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // 01.
+      var address = {
+        street: "Rua dos Pinheiros",
+        number: 1293,
+        neigbor: "Centro",
+        city: "São Paulo",
+        uf: "SP"
+      };
+
+      function showAddress(object) {
+        return (
+          "O usuário mora em " +
+          object.city +
+          "/" +
+          object.uf +
+          ", no bairro " +
+          object.neigbor +
+          ', na rua "' +
+          object.street +
+          " com n° " +
+          object.number
+        );
+      }
+      console.log(showAddress(address));
+
+      // 2.
+      function evenNumbers(x, y) {
+        for (let i = x; i <= y; i++) {
+          if (i % 2 === 0) {
+            console.log(i);
+          }
+        }
+      }
+      evenNumbers(2, 50);
+
+      //3.
+      function hasSkill(skills) {
+        return skills.indexOf("Javascript") !== -1;
+      }
+      let skills = ["Javascript", "ReactJS", "React Native"];
+      console.log(hasSkill(skills));
+
+      //4.
+      /*
+      0 - 1 => Iniciante | 1 - 3 => Intermediário | 3 - 6 => Avançado | Acimad de 7 => Jedi Master
+      */
+      function experience(years) {
+        if (years > 0 && years <= 1) {
+          console.log("Iniciante");
+        } else if (years > 1 && years <= 3) {
+          console.log("Intermediário");
+        } else if (years > 3 && years <= 6) {
+          console.log("Avançado");
+        } else if (years >= 7) {
+          console.log("Jedi Master");
+        }
+      }
+      let yearsOfStudy = 7;
+      experience(7);
+
+      // 5.
+      let users = [
+        {
+          name: "Davi",
+          skillsDev: ["Javascript", "ReactJS", "React Native"]
+        },
+        {
+          name: "Sarah",
+          skillsDev: ["Javascript", "VueJS", "React Native"]
+        }
+      ];
+      function showSkills(users) {
+        for (user of users) {
+          console.log(
+            "O usuário " +
+              user.name +
+              " tem as habilidades: " +
+              user.skillsDev.join(", ")
+          );
+        }
+      }
+      showSkills(users);
+    </script>
+  </body>
+</html>
