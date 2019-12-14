@@ -1,3 +1,3 @@
 ## Cursos Free Rocketseat - Javascript, EM6, ReactJS
 
-![](starterrocket.png);
+Desafios e exemplos dos cursos.

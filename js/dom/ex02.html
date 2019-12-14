@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <button id="btn">Clique Aqui</button>
+      <br />
+      <div class="box"></div>
+    </div>
+
+    <script>
+      let btnElement = document.querySelector("button#btn");
+      let divBox = document.querySelector("div.box");
+      let divBoxElement = document.createElement("div");
+      divBoxElement.style.marginTop = 5;
+      divBoxElement.style.width = 100;
+      divBoxElement.style.height = 100;
+      divBoxElement.style.backgroundColor = "#f00";
+
+      function getRandomColor() {
+        let letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      function createDiv() {
+        divBox.appendChild(divBoxElement);
+      }
+
+      function setNewColor() {
+        divBoxElement.style.backgroundColor = getRandomColor();
+      }
+
+      btnElement.onclick = () => {
+        createDiv();
+        divBoxElement.onmouseover = () => {
+          setNewColor();
+        };
+      };
+    </script>
+  </body>
+</html>

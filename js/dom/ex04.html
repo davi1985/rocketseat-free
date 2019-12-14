@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <ul></ul>
+      <input type="text" name="newItem" />
+      <button onclick="add()">Adicionar</button>
+    </div>
+
+    <script>
+      let family = ["Davi", "Joelma", "Sarah"];
+      let listElement = document.querySelector("ul");
+      let inputElement = document.querySelector("input[name=newItem]");
+
+      function addItem(text) {
+        let liElement = document.createElement("li");
+        let textElement = document.createTextNode(text);
+
+        liElement.appendChild(textElement);
+        listElement.appendChild(liElement);
+      }
+
+      function add() {
+        addItem(inputElement.value);
+        inputElement = "";
+      }
+
+      for (member of family) {
+        addItem(member);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      let family = ["Davi", "Joelma", "Sarah"];
+      let divApp = document.querySelector("div#app");
+      let listElement = document.createElement("ul");
+
+      for (member of family) {
+        let liElement = document.createElement("li");
+        let textElement = document.createTextNode(member);
+
+        liElement.appendChild(textElement);
+        listElement.appendChild(liElement);
+        divApp.appendChild(listElement);
+      }
+    </script>
+  </body>
+</html>
