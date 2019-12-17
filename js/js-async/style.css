@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(154, 220, 247);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+  text-align: center;
+  width: 320px;
+  margin: auto;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+ul {
+  font-size: 1em;
+}
+li {
+  list-style: ;
+}
