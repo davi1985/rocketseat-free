@@ -4,7 +4,6 @@ let container = document.querySelector("div.list");
 
 function renderRepositories(repositories) {
   listElement.innerHTML = "";
-  let total = document.createElement("p");
 
   for (repo of repositories) {
     const textElement = document.createTextNode(repo.name);
