@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Kulim+Park:300,400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kulim Park", sans-serif;
+  background: #fafafa;
+  color: #333;
+}
